@@ -1,2 +1,0 @@
-# dialog
-Created with CodeSandbox
