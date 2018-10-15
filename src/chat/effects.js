@@ -22,7 +22,7 @@ const randomKey = (obj, stage) => {
 const getRandomMessage = (obj, stage, i = randomKey(obj, stage)) =>
 	obj.hasOwnProperty(stage) ? newMessage(obj[stage][i].text, obj.author, i, stage) : newMessage('Текст не найден!', 'Ошибка!')
 
-const getRandomMessage2
+const getRandomMessage2 = () => {}
 
 export default effects({
 	[NEW_GAME]({ getState, dispatch }) {

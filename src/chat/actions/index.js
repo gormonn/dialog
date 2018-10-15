@@ -6,7 +6,8 @@ export function newGame() {
 	}
 }
 
-export function sendMessage({ text, author, ...rest }) {
+export function sendMessage(props) {
+	const { text, author, ...rest } = props || {}
 	//console.log('sendMessage', { text, author, ...rest })
 	return {
 		type: NEW_MESSAGE,
